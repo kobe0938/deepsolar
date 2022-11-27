@@ -15,27 +15,27 @@ const ContactArea = () => {
                               <ul>
                                  <li>
                                     <h4>Address</h4>
-                                    <p>Huang Engineering, Room 106 <br /> Stanford, CA 94305</p>
+                                    <p>473 Via Ortega <br /> Stanford, CA 94305</p>
                                  </li>
-                                 <li>
+                                 {/* <li>
                                     <h4>call us</h4>
                                     <p><a href="tel:(650) 862 4566">(650) 862 4566</a></p>
                                     <p><a href="tel:(204)-234-674">(204) 234 674</a></p>
-                                 </li>
+                                 </li> */}
                                  <li>
                                     <h4>Email Address</h4>
-                                    <p><a href="xiaokunc@stanford.edu">xiaokunc@stanford.edu</a></p>
+                                    <p><a href="//deepsolar.stanford@gmail.com">deepsolar.stanford@gmail.com</a></p>
                                  </li>
                               </ul>
                            </div>
-                           <div className="contact__form">
+                           {/* <div className="contact__form">
                               <form >
                                  <input type="text" required placeholder="Your Name" />
                                  <input type="email" required placeholder="Your Email" />
                                  <textarea required placeholder="Your Message"></textarea>
                                  <button type="submit" className="z-btn">Send Message</button>
                               </form>
-                           </div>
+                           </div> */}
                         </div>
                      </div>
                   </div>

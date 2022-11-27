@@ -6,7 +6,10 @@ import { BiMap } from 'react-icons/bi';
 import { FaEnvelope, FaPhoneAlt, FaSearch } from 'react-icons/fa';
 
 const Sidebar = ({ show, handleClose }) => {
-
+   const logoAdditionalStlye = {
+      width: "50%",
+      height: "50%",
+     }
    return (
       <>
 
@@ -15,7 +18,7 @@ const Sidebar = ({ show, handleClose }) => {
                <Offcanvas.Header closeButton>
                   <div className="logo">
                      <a href="index.html">
-                        <img src="assets/img/logo/logo.png" alt="logo" />
+                        <img src="assets/img/logo/logo.png" alt="logo" style={logoAdditionalStlye}/>
                      </a>
                   </div>
                </Offcanvas.Header>
@@ -41,7 +44,10 @@ const Sidebar = ({ show, handleClose }) => {
                               <div className="tab-pane fade show active" id="menu" role="tabpanel" aria-labelledby="menu-tab">
 
                                  <div className='side_navBar'>
-                                    <Collapsible trigger={<NavLink to="/home">Home</NavLink>} triggerTagName="div"
+                                    <div className='about iconAdd'>
+                                          <NavLink to="/home">Home </NavLink>
+                                    </div>
+                                    {/* <Collapsible trigger={<NavLink to="/home">Home</NavLink>} triggerTagName="div"
                                        triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
                                        <ul className="sidebar_sub_menu text-white">
 
@@ -65,13 +71,24 @@ const Sidebar = ({ show, handleClose }) => {
                                           </Collapsible>
 
                                        </ul>
-                                    </Collapsible>
+                                    </Collapsible> */}
 
                                    <div className='about iconAdd'>
-                                       <NavLink to="/about">About Us </NavLink>
+                                       <NavLink to="/team">People </NavLink>
                                    </div>
 
-                                    <Collapsible trigger={<NavLink to="/services">Services</NavLink>} triggerTagName="div"
+                                   <div className='about iconAdd'>
+                                       <NavLink to="/interactiveMap">Interactive Map</NavLink>
+                                   </div>
+                                   <div className='about iconAdd'>
+                                       <NavLink to="/comparasionMap">Comparasion Map</NavLink>
+                                   </div>
+
+                                   <div className='about iconAdd'>
+                                       <NavLink to="/dataAnalytics">Data Analytics</NavLink>
+                                   </div>
+
+                                    {/* <Collapsible trigger={<NavLink to="/services">Services</NavLink>} triggerTagName="div"
                                        triggerOpenedClassName="icon_close" triggerClassName="iconAdd" open={false}>
                                           <ul className="sidebar_sub_menu submenu text-white">
                                              <li><NavLink to="/services">Services</NavLink></li>
@@ -95,7 +112,7 @@ const Sidebar = ({ show, handleClose }) => {
                                           <li><NavLink to="/blogs">Blog</NavLink></li>
                                           <li><NavLink to="/blogDetails">Blog Details</NavLink></li>
                                        </ul>
-                                    </Collapsible>
+                                    </Collapsible> */}
 
                                     <div className='about iconAdd border-0'>
                                        <NavLink to="/contact">Contact Us </NavLink>
@@ -109,10 +126,10 @@ const Sidebar = ({ show, handleClose }) => {
                                  <div className="sidebar__info">
                                     <div className="logo mb-40">
                                        <a href="index.html">
-                                          <img src="assets/img/logo/logo.png" alt="logo"/>
+                                          <img src="assets/img/logo/logo.png" alt="logo" style={logoAdditionalStlye}/>
                                        </a>
                                     </div>
-                                    <p>We must explain to you how all seds this mistakens idea off denouncing pleasures and praising pain was born and I will give you a completed accounts of the system and expound.</p>
+                                    <p>This is Stanford DeepSolar.</p>
                                     <a href="contact.html" className="z-btn z-btn-white">contact us</a>
                                     <div className="sidebar__search">
                                        <form action="#">
@@ -127,7 +144,7 @@ const Sidebar = ({ show, handleClose }) => {
                                                 <i > <BiMap /> </i>
                                              </div>
                                              <div className="text">
-                                                <span>Ave 14th Street, Mirpur 210, San Franciso, USA 3296.</span>
+                                                <span>Stanford University, CA, 94305</span>
                                              </div>
                                           </li>
                                           <li>
@@ -143,7 +160,7 @@ const Sidebar = ({ show, handleClose }) => {
                                                 <i ><FaPhoneAlt /> </i>
                                              </div>
                                              <div className="text">
-                                                <span><a href="tel:(+642)-394-396-432">(+642) 394 396 432</a></span>
+                                                <span><a href="tel:650 862 4566">650 862 4566</a></span>
                                              </div>
                                           </li>
                                        </ul>

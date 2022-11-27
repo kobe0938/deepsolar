@@ -18,12 +18,15 @@ const HomeTwo = () => {
    return (
       <>
          <PageHelmet pageTitle="Home Two" />
-
          <HomeTwoHeader/>
          <HomeTwoHeroSlider/>
          <HomeTwoExpertArea/>
-         <HomeTwoBlogs/>
-         <HomeTwoCaseArea/>
+         <p id="latestNews">
+            <HomeTwoBlogs/>
+         </p>
+         <p id="workPresentation">
+            <HomeTwoCaseArea/>
+         </p>
          {/* <HomeTwoFeatures/> */}
          {/* <HomeTwoFaq/> */}
          {/* <HomeTwoAchievement/> */}

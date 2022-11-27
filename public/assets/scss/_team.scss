@@ -22,10 +22,10 @@
     }
     &__item{
         padding: 30px 35px;
-        background: $black-3;
+        background: #651C32;
         @include border-radius(20px);
         &-add{
-            background: $white;
+            background: $white;//
             &::after{
                 display: none;
             }
@@ -80,7 +80,7 @@
         & h3{
             font-size: 22px;
             margin-bottom: 0;
-            color: $white;
+            color: $white;//
             text-transform: capitalize;
         }
         & span{
@@ -99,12 +99,12 @@
         & h3{
             font-size: 22px;
             margin-bottom: 0;
-            color: $white;
+            color: $black;
             text-transform: capitalize;
         }
         & span{
             font-size: 15px;
-            color: $grey-5;
+            color: $black;
         }
     }
     &__social{
@@ -127,10 +127,10 @@
                     text-align: center;
                     background: $purple;
                     font-size: 14px;
-                    color: $white;
+                    color: $black;
                     @include border-radius(10px);
                     &:hover{
-                        background: $white;
+                        background: $black;
                         color: $purple;
                     }
                 }
@@ -246,7 +246,7 @@
                         @include border-radius(10px);
                         &:hover{
                             background: $theme-color;
-                            color: $white;
+                            color: $black;
                         }
                     }
                 }

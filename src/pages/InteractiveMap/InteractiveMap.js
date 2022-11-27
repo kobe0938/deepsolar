@@ -11,7 +11,6 @@ import HomeTwoFaq from '../HomeTwo/HomeTwoFaq/HomeTwoFaq';
 import TableauCom from '../../components/TableauCom';
 import { useEffect, useRef } from 'react';
 import HomeTwoHeader from '../HomeTwo/HomeTwoHeader/HomeTwoHeader';
-import HomeTwoHeaderSticky from '../HomeTwo/HomeTwoHeader/HomeTwoHeaderSticky';
 import HomeTwoFooter from '../HomeTwo/HomeTwoFooter/HomeTwoFooter';
 const {tableau} = window;
 

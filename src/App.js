@@ -3,7 +3,9 @@ import ScrollTop from "./components/ScrollTop";
 import About from "./pages/About/About";
 import BlogDetails from "./pages/BlogDetails/BlogDetails";
 import Blogs from "./pages/Blogs/Blogs";
+import ComparisionMap from "./pages/ComparisionMap/ComparisionMap";
 import Contact from "./pages/Contact/Contact";
+import DataAnalytics from "./pages/DataAnalytics/DataAnalytics";
 import HeaderStyleFive from "./pages/HeaderStyleFive/HeaderStyleFive";
 import HeaderStyleFour from "./pages/HeaderStyleFour/HeaderStyleFour";
 import HeaderStyleSeven from "./pages/HeaderStyleSeven/HeaderStyleSeven";
@@ -19,6 +21,34 @@ import ServicesDetails from "./pages/ServicesDetails/ServicesDetails";
 import Team from "./pages/Team/Team";
 import TeamDetails from "./pages/TeamDetails/TeamDetails";
 
+import { initializeApp } from 'firebase/app';
+import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import { getAnalytics,logEvent } from "firebase/analytics";
+// Follow this pattern to import other Firebase services
+// import { } from 'firebase/<service>';
+
+// TODO: Replace the following with your app's Firebase project configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCcyshqv9oekSsI9buq-MKRZq1Cst_ATog",
+  authDomain: "deepsolarfirebase.firebaseapp.com",
+  projectId: "deepsolarfirebase",
+  storageBucket: "deepsolarfirebase.appspot.com",
+  messagingSenderId: "416931051240",
+  appId: "1:416931051240:web:54c30155250d8f7fd0bb5d",
+  measurementId: "G-C58KLSCLJ6"
+};
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+logEvent(analytics, 'notification_received');
+const db = getFirestore(app);
+
+// Get a list of cities from your database
+async function getCities(db) {
+  const citiesCol = collection(db, 'cities');
+  const citySnapshot = await getDocs(citiesCol);
+  const cityList = citySnapshot.docs.map(doc => doc.data());
+  return cityList;
+}
 
 function App() {
   return (
@@ -46,6 +76,10 @@ function App() {
             <Route path="/contact" element={<Contact/>} />
 
             <Route path = "/interactiveMap" element={<InteractiveMap/>}/>
+
+            <Route path="/comparisonMap" element={<ComparisionMap/>} />
+
+            <Route path = "/dataAnalytics" element = {<DataAnalytics/>} />
         </Routes>
       </BrowserRouter>
     </>

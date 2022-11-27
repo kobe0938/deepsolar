@@ -1,11 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const HomeTwoSingleSlide = ({ slider_class,content_class, attr_1, attr_2, attr_3 = "a deep learning framework that analyzes satellite imagery to identify the GPS locations and sizes of solar photovoltaic (PV) panels",btn_text}) => {
+const HomeTwoSingleSlide = ({ slider_class,content_class, attr_1, attr_2, attr_3 = "A nationwide spatiotemporal solar installation dataset constructed by machine learning.",btn_text, backgroundImage}) => {
    return (
       <>
          <div className="single-slider single-slider-2 slider__height slider__height-2 d-flex align-items-center" style={{
-            background: `url(assets/img/slider/02/slider-1.jpeg)`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+            background: backgroundImage, 
+            // backgroundRepeat: 'no-repeat',
+            // backgroundColor: 'black',
+            backgroundPosition: 'center bottom', 
+            backgroundSize: "100% 150%"
+            }}>
 
             <div className="container">
                <div className="row">
@@ -15,7 +19,7 @@ const HomeTwoSingleSlide = ({ slider_class,content_class, attr_1, attr_2, attr_3
                          {attr_2}
                         <p >{attr_3}</p>
                         <div className="slider__btn">
-                           <Link to="/contact" className="z-btn z-btn-transparent">{btn_text}</Link>
+                           <a href="#latestNews" className="z-btn z-btn-transparent">{btn_text}</a>
                         </div>
                      </div>
                   </div>

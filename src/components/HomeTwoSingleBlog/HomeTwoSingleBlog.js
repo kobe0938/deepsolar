@@ -1,7 +1,7 @@
 import { CgArrowLongRight } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
 
-const HomeTwoSingleBlog = ({date,name,desc}) => {
+const HomeTwoSingleBlog = ({monthYear,date,publisher,desc,href}) => {
    return (
       <>
          <div className="col-xl-4 col-lg-4 col-md-6">
@@ -10,16 +10,17 @@ const HomeTwoSingleBlog = ({date,name,desc}) => {
                <div className="blog__content">
                   <div className="blog__meta date mb-45">
                      <h4>{date}</h4>
-                     <h6>Dec 2018</h6>
+                     <h6>{monthYear}</h6>
                   </div>
                   <div className="blog__meta user mb-15">
-                     <span>By <Link to="/blogDetails">{name}</Link></span>
+                     <span>{publisher}</span>
                   </div>
                   <h3>
                      <Link to="/blogDetails">{desc}</Link>
                   </h3>
                   <div className="blog__btn">
-                     <a href="https://google.com" className="link-btn-2" target="_blank" rel="noreferrer">
+                     <a href={href} className="link-btn-2" rel="noreferrer">
+                     {/* option to open a new tab: target="_blank" */}
                      Read More
                            <i > <CgArrowLongRight /> </i>
                            <i > <CgArrowLongRight /> </i>

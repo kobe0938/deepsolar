@@ -10,8 +10,8 @@ const CommonCtaArea = () => {
                <div className="row">
                   <div className="col-xl-10 offset-xl-1">
                      <div className="cta__content text-center">
-                        <span >From Deep Solar to Deep Solar++ ...</span>
-                        <h1 >Do you have any question? Feel free to contact us</h1>
+                        {/* <span >From DeepSolar to DeepSolar++ ...</span> */}
+                        <h1 >For any inquiries, please feel free to contact us.</h1>
                         <div className="cta__btn">
                            <Link to="/contact" className="z-btn z-btn-white mb-30">Contact Us</Link>
                            {/* <Link to="/contact" className="z-btn z-btn-transparent mb-30">Work with us</Link> */}

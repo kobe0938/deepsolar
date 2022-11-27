@@ -30,7 +30,7 @@ const HomeTwoTestimonial = () => {
          id:2,
          name:'Vicky Stein',
          title:'PBS News Hour',
-         word: 'It adds a lot of resiliency in case of hazards and disasters when you are the generator of your own electricity,” Bhaduri said. “I always think about the upcoming disruptors. What is the Uber or Airbnb for energy? Who will create micro-energy economies where people are sharing energy with each other?',
+         word: 'Utility managers could use the information to plan for their own power production in the short term (less on sunny days, more when heavy clouds block the sky). In Germany, energy overloads due to the rapid adoption of renewables have spawned power surges and occasional increases in carbon emissions from fossil-fuel plants. Utilities can also use DeepSolar to determine whether new and expensive power plants might become obsolete before they’re built.',
       },
    ]
 
@@ -42,7 +42,7 @@ const HomeTwoTestimonial = () => {
                   <div className="col-xl-5 col-lg-6">
                      <div className="testimonial__content pt-165 pb-175">
                         <div className="section__title section__title-3 mb-30">
-                           <span className="white-color">Media Coverage</span>
+                           {/* <span className="white-color">Media Coverage</span> */}
                            <h2 className="white-color">Featured Media Coverage</h2>
                         </div>
 

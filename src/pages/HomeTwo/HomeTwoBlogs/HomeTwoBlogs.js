@@ -11,17 +11,18 @@ const HomeTwoBlogs = () => {
                <div className="row">
                   <div className="col-xl-5">
                      <div className="section__title section__title-3 mb-65">
-                        <span>Latest News</span>
-                        <h2>Latest deep solar news and announcements.</h2>
+                        {/* <span>Latest News111</span> */}
+                        <h2>Latest News</h2>
                      </div>
                   </div>
                </div>
                <div className="row">
 
-                  <HomeTwoSingleBlog date="24" name="Stanford News" desc="The Start-Up Ultimate Guide to Make Your WordPress Journal." />
-                  <HomeTwoSingleBlog date="12" name="Stanford News" desc="The Start-Up Ultimate Guide to Make Your WordPress Journal." />
-                  <HomeTwoSingleBlog date="10" name="Stanford News" desc="The Start-Up Ultimate Guide to Make Your WordPress Journal." />
-                  <HomeTwoSingleBlog date="10" name="Stanford News" desc="The Start-Up Ultimate Guide to Make Your WordPress Journal." />
+                  <HomeTwoSingleBlog monthYear="Nov 2022" date="15" publisher="by Joule" desc="Our DeepSolar++ paper is published at Joule." href="https://www.cell.com/joule/fulltext/S2542-4351(22)00477-9"/>
+                  <HomeTwoSingleBlog monthYear="Apr 2022" date="22" publisher="" desc="We hosted the DeepSolar Technical Advisory Committee Meeting." href="/"/>
+                  <HomeTwoSingleBlog monthYear="Sep 2020" date="07" publisher="" desc="A new model is developed for mapping solar PV installations in Germany." href="https://ieeexplore.ieee.org/abstract/document/9203258"/>
+                  <HomeTwoSingleBlog monthYear="Dec 2018" date="19" publisher="by Stanford News" desc="Our DeepSolar work is covered by Stanford News." href="https://news.stanford.edu/2018/12/19/inventory-indicates-goes-solar/"/>
+                  <HomeTwoSingleBlog monthYear="Dec 2018" date="19" publisher="by Joule" desc="Our DeepSolar paper is published at Joule." href="https://www.cell.com/joule/fulltext/S2542-4351(18)30570-1"/>
 
                </div>
                {/* <div className="row">

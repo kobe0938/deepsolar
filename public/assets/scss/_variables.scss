@@ -1,21 +1,21 @@
 // Font Family
-$frank: 'Frank Ruhl Libre', serif;
-$lato: 'Lato', sans-serif;
+$frank: 'Source Sans Pro', serif;
+$lato: 'Source Sans Pro', sans-serif;
 
 // Colors ---------------
 $white: #ffffff;
 
-$black: #ffe415;
-$black-2: #fbe733;
-$black-3: #ffb20c;
-$black-4: #fde43c;
+$black: #0c0b02;
+$black-2: #070602;
+$black-3: #2d2929;
+$black-4: #191816;
 $green: #25ad0a;
 $green-2: #8aa29a;
 $green-3: #e9f7e6;
 $green-4: #28ba85;
-$blue: #fcd023;
-$blue-2: #ffe521;
-$purple: #fcdd16;
+$blue: #2347fc;
+$blue-2: #3021ff;
+$purple: #ca16fc;
 $pink: #ff49ec;
 $or: #fd914f;
 
@@ -24,7 +24,7 @@ $grey:#fafafa;
 $grey-2:#f8f7fe;
 $grey-3:#d4d3eb;
 $grey-4:#ecebff;
-$grey-5:#cac9d3;
+$grey-5:#f4f0f0;
 $grey-6:#9895b4;
 $grey-7:#bcbbcb;
 $grey-8:#f4f5fd;
@@ -43,7 +43,7 @@ $grey-20:#9b9aa4;
 $grey-21:#f7f7f7;
 
 $theme-color: #fca800;
-$body-text-color: #686777;
+$body-text-color: #070707;
 
 //border colors
 $border:#f4f4f4;
@@ -64,12 +64,12 @@ $border-13: #f1f0f7;
 $heading-color: #1f1841;
 
 // Soft color
-$black-soft:#f9a007;
-$black-soft-2:#fccf07;
-$black-soft-3:#f5d81e;
-$black-soft-4:#fff951;
-$black-soft-5:#f6d155;
-$black-soft-6:#ffcb5b;
+$black-soft:#262520;
+$black-soft-2:#262520;
+$black-soft-3:#262520;
+$black-soft-4:#262520;
+$black-soft-5:#262520;
+$black-soft-6:#262520;
 
 // Responsive Variables
 $laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';

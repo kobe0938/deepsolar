@@ -15,7 +15,8 @@ const Team = () => {
 
          <HomeTwoHeader/>
          <CommonPageHeader title="Our Team" subtitle="Team" />
-         <TeamArea/>
+         <TeamArea currentTeamMembers = "Current team members" subtitle2 = "We developed DeepSolar++ && DeepSolar."/>
+         <TeamArea currentTeamMembers = "Previous team members" subtitle2 = "We developed DeepSolar."/>
          <CommonCtaArea/>
          <HomeTwoFooter/>
       </>

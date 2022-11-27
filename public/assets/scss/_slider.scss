@@ -25,7 +25,7 @@
         &.slick-active{
             & .slider__content-2{
                 &::before{
-                    width: 250px;
+                    width: 250px;//
                     @media #{$xs}{
                         width: 200px;
                     }
@@ -36,7 +36,7 @@
 }
 
 .slick-active .single-slider-2 .slider__content-2::before {
-    width: 250px;
+    width: 250px;//
 }
 
 .slider{
@@ -91,12 +91,12 @@
         z-index: 1;
         & > span{
             color: $grey-3;
-            font-size: 20px;
+            font-size: 20px;//
             display: inline-block;
             margin-bottom: 17px;
         }
         & h1{
-            font-size: 70px;
+            font-size: 70px; // title
             color: $white;
             font-weight: 900;
             margin-bottom: 38px;
@@ -118,11 +118,11 @@
                 background: rgba($color: $white, $alpha: .1);
                 @include border-radius(6px);
                 display: inline-block;
-                margin-bottom: 10px;
-                font-size: 16px;
+                // margin-bottom: 10px;
+                font-size: 16px;//
             }
             & h1{
-                margin-bottom: 15px;
+                // margin-bottom: 15px;
                 @media #{$laptop}{
                     font-size: 60px;
                 }
@@ -131,8 +131,9 @@
                 }
             }
             & p{
+                font-size: 26px;//
                 color: #e6e6e6;
-                margin-bottom: 45px;
+                // margin-bottom: 45px;
             }
             &::before{
                 position: absolute;

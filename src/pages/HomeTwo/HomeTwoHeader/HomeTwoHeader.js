@@ -8,6 +8,11 @@ const HomeTwoHeader = () => {
    const handleClose = () => setShow(false);
    const handleShow = () => setShow(true);
    const { stickyMenu } = useGlobalContext();
+
+   const logoAdditionalStlye = {
+      width: "50%",
+      height: "50%",
+     }
    return (
       <>
          <header>
@@ -16,14 +21,14 @@ const HomeTwoHeader = () => {
                   <div className="container">
                      <div className="row align-items-center">
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-                           <div className="logo">
+                           <div className="logo" >
                               <NavLink to="/">
-                                 <img src="assets/img/logo/logo.png" alt="logo"/>
+                                 <img src="assets/img/logo/logo.png" alt="logo" style={logoAdditionalStlye}/>
                               </NavLink>
                            </div>
                            <div className="logo-gradient">
                               <NavLink to="/">
-                                 <img src="assets/img/logo/logo.png" alt="logo"/>
+                                 <img src="assets/img/logo/logo.png" alt="logo" style={logoAdditionalStlye}/>
                               </NavLink>
                            </div>
                         </div>
@@ -65,7 +70,7 @@ const HomeTwoHeader = () => {
                                           </ul> */}
                                        </li>
                                        <li>
-                                          <NavLink to="/home">Comparasion</NavLink>
+                                          <NavLink to="/comparisonMap">Comparison Map</NavLink>
                                           {/* <ul className="submenu">
                                              <li><NavLink to="/portfolio">portfolio</NavLink></li>
                                              <li><NavLink to="/portfolioDetails">portfolio Details</NavLink></li>
@@ -73,14 +78,7 @@ const HomeTwoHeader = () => {
                                              <li><NavLink to="/teamDetails">team Details</NavLink></li>
                                           </ul> */}
                                        </li>
-                                       <li>
-                                          <NavLink to="/home">Time-series</NavLink>
-                                          {/* <ul className="submenu">
-                                             <li><NavLink to="/blogs">Blog</NavLink></li>
-                                             <li><NavLink to="/blogDetails">Blog Details</NavLink></li>
-                                          </ul> */}
-                                       </li>
-                                       <li><NavLink to="/home">Data Analytics</NavLink></li>
+                                       <li><NavLink to="/dataAnalytics">Data Analytics</NavLink></li>
                                     </ul>
                                  </nav>
                               </div>

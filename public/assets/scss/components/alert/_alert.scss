@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+//
+// Alert
+//
+// For displaying a notification that keeps people informed
+// of a status, or for displaying a validation message that
+// alerts someone of an important piece of information.
+//
+// .su-alert--success su-alert--text-light    - Successful Transaction Message
+// .su-alert--warning                         - Warning Message
+// .su-alert--error su-alert--text-light      - Error Message
+// .su-alert--info su-alert--text-light       - Informative Message
+// .su-alert--text-light                      - Lighter color text for darker backgrounds
+//
+// Markup: templates/components/alert/alert.twig
+//
+// Style guide: Simple.Alert
+//
+.su-alert {
+  background-color: color(default, $su-alert-colors);
+
+  a {
+    color: color(dark-text, $su-alert-colors);
+  }
+
+  .centered-container {
+    @include padding(1em null);
+    display: flex;
+    flex-wrap: wrap;
+
+    @include grid-media("sm") {
+      align-items: center;
+    }
+  }
+}
+
+// Dismiss close button.
+// -----------------------------------------------------------------------------
+.su-alert__dismiss {
+  @include responsive-spacing('margin', null null null 1);
+  order: 3;
+  height: 100%;
+  align-content: flex-end;
+  flex-shrink: 1;
+  text-align: right;
+
+  @include grid-media-max('xs') {
+    width: 100%;
+  }
+
+  .su-alert__dismiss-button {
+    @include padding(0);
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: $su-font-semi-bold;
+    color: color(dark-text, $su-alert-colors);
+    font-size: 1.7rem;
+    letter-spacing: 0.1em;
+
+    .su-far,
+    .su-fas,
+    .fas {
+      @include margin(null null null 0.5em);
+    }
+
+    i,
+    .su-far,
+    .su-fas,
+    .fas {
+      font-style: normal;
+      text-decoration: none;
+    }
+
+    &.su-text-black {
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        color: $su-color-black;
+      }
+    }
+  }
+}
+
+// Flex header with the icon and message type label.
+// -----------------------------------------------------------------------------
+.su-alert__header {
+  @include responsive-spacing('margin', null 1 null null);
+  order: 1;
+  flex-shrink: 1;
+
+  @include grid-media-max('md') {
+    @include margin(null null 1em null);
+    width: 100%;
+  }
+}
+
+// Icon Styles.
+// ------------
+.su-alert__icon {
+  @include margin(null 0.5em null null);
+  display: inline-block;
+  max-width: 20px;
+
+  i,
+  .su-far,
+  .su-fas {
+    font-style: normal;
+  }
+}
+
+// Alert Type Styles.
+// ------------------
+.su-alert__label {
+  height: 100%;
+  line-height: 100%;
+  display: inline-block;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: $su-font-semi-bold;
+  letter-spacing: 0.1em;
+
+  &::after {
+    content: ":";
+  }
+}
+
+// Flex body with the main message.
+// -----------------------------------------------------------------------------
+.su-alert__body {
+  order: 2;
+  flex-grow: 1;
+  flex-basis: 100px;
+}
+
+.su-alert__heading {
+  @include margin(null null 1rem null);
+}
+
+.su-alert__text {
+  @include margin(null null 0 null);
+
+  a {
+    color: $su-color-black;
+    text-decoration: underline;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $su-color-black;
+      background-color: $su-color-digital-blue-light;
+      text-decoration: underline;
+    }
+
+    &.su-button,
+    &.su-button--secondary {
+      @include button-secondary;
+
+      background-color: color(default, $su-alert-colors);
+      box-shadow: $su-button-stroke $su-color-black;
+      color: color(dark-text, $su-alert-colors);
+
+      &:hover,
+      &:focus {
+        background-color: color(default, $su-alert-colors);
+      }
+    }
+
+    &.su-button--big {
+      @include button-big;
+
+      background-color: color(default, $su-alert-colors);
+      box-shadow: $su-button-stroke $su-color-black;
+      color: color(dark-text, $su-alert-colors);
+
+      &:hover,
+      &:focus {
+        background-color: color(default, $su-alert-colors);
+        color: color(dark-text, $su-alert-colors);
+      }
+    }
+  }
+}
+
+// Optional open footer area.
+// -----------------------------------------------------------------------------
+.su-alert__footer {
+
+  a {
+    color: color(dark-text, $su-alert-colors);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: color(dark-text, $su-alert-colors);
+      text-decoration: underline;
+    }
+  }
+
+  .su-link {
+    &::after {
+      background: color(dark-text, $su-alert-colors);
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+
+      &::after {
+        background: color(dark-text, $su-alert-colors);
+      }
+    }
+  }
+}
+
+.su-alert__text + .su-alert__footer {
+  @include responsive-spacing('margin', 0 null null null);
+}
+
+.su-alert__dismiss ~ .su-alert__body {
+  @include grid-media-max('sm') {
+    @include margin(null null 1em null);
+  }
+}

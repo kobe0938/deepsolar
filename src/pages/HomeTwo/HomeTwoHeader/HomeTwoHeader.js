@@ -15,7 +15,7 @@ const HomeTwoHeader = () => {
      }
    return (
       <>
-         <header>
+         {/* <header>
             <div className="header__area p-relative header__transparent">
                <div id="header__sticky" className={stickyMenu ? 'sticky header__bottom header__bottom-2' : 'header__bottom header__bottom-2'}>
                   <div className="container">
@@ -39,44 +39,13 @@ const HomeTwoHeader = () => {
                                     <ul>
                                        <li>
                                           <NavLink to="/home">Home</NavLink>
-                                          {/* <ul className="submenu">
-                                             <li><NavLink to="/home">Home Style 1</NavLink></li>
-                                             <li>
-                                                <NavLink to="/homeTwo">Home Style 2</NavLink>
-                                                <ul className="submenu">
-                                                   <li><NavLink to="/home">Home Style 1</NavLink></li>
-                                                   <li><NavLink to="/homeTwo">Home Style 2</NavLink></li>
-                                                   <li><NavLink to="/homeThree">Home Style 3</NavLink></li>
-                                                </ul>
-                                             </li>
-                                             <li>
-                                                <NavLink to="/homeThree">Home Style 3</NavLink>
-                                                <ul className="submenu">
-                                                   <li><NavLink to="/headerStyleFour">Header Syle 4</NavLink></li>
-                                                   <li><NavLink to="/headerStyleFive">Header Syle 5</NavLink></li>
-                                                   <li><NavLink to="/headerStyleSix">Header Syle 6</NavLink></li>
-                                                   <li><NavLink to="/headerStyleSeven">Header Syle 7</NavLink></li>
-                                                </ul>
-                                             </li>
-                                          </ul> */}
                                        </li>
                                        <li><NavLink to="/team">People </NavLink></li>
                                        <li>
-                                          {/* <NavLink to="/services">Interactive Map</NavLink> */}
                                           <NavLink to="/interactiveMap">Interactive Map</NavLink>
-                                          {/* <ul className="submenu">
-                                             <li><NavLink to="/services">Services</NavLink></li>
-                                             <li><NavLink to="/servicesDetails">Services Details</NavLink></li>
-                                          </ul> */}
                                        </li>
                                        <li>
                                           <NavLink to="/comparisonMap">Comparison Map</NavLink>
-                                          {/* <ul className="submenu">
-                                             <li><NavLink to="/portfolio">portfolio</NavLink></li>
-                                             <li><NavLink to="/portfolioDetails">portfolio Details</NavLink></li>
-                                             <li><NavLink to="/team">team</NavLink></li>
-                                             <li><NavLink to="/teamDetails">team Details</NavLink></li>
-                                          </ul> */}
                                        </li>
                                        <li><NavLink to="/dataAnalytics">Data Analytics</NavLink></li>
                                     </ul>
@@ -98,8 +67,74 @@ const HomeTwoHeader = () => {
                   </div>
                </div>
             </div>
-         </header>
+         </header> */}
 
+      <section class="su-masthead [ modifier_class ]">
+         <a href="#main-content" class="su-skiplinks ">Skip to main content</a>
+         <div class="su-brand-bar ">
+            <div class="su-brand-bar__container">
+               <a class="su-brand-bar__logo" href="https://stanford.edu">
+               Stanford University
+               <span class="su-brand-bar__link--a11y">(link is external)</span>
+               </a>
+            </div>
+         </div>
+         <section>
+            <div class="su-lockup su-lockup--option-d">
+               <a href="/">
+               <div class="su-lockup__cell1">
+                  <div class="su-lockup__wordmark-wrapper">
+                     <span class="su-lockup__wordmark">Stanford</span>
+                  </div>
+               </div>
+               <div class="su-lockup__cell2">
+                  <span class="su-lockup__line1">DeepSolar</span>
+                  {/* <span class="su-lockup__line3">Stanford's Official Styleguide</span> */}
+               </div>
+               </a>
+            </div>
+            <div class="su-site-search " role="search">
+               <form action="https://www.stanford.edu/search" method="get" accept-charset="UTF-8">
+               <label class="su-site-search__sr-label" for="search-field">Search this site</label>
+               <input type="text" id="search-field" name="search-field" class="su-site-search__input" placeholder="Search this site" maxlength="128" />
+               <button type="submit" name="search" class="su-site-search__submit su-sr-only-text">Submit Search</button>
+               </form>
+            </div>
+            <nav class="su-main-nav no-js su-main-nav--mobile-search" aria-label="main menu">
+               <button class="su-main-nav__toggle su-main-nav__toggle--light" aria-expanded="false" aria-label="expand menu">Menu</button>
+               <ul class="su-main-nav__menu-lv1">
+               <li class=" ">
+                  <a href="/">Home</a>
+               </li>
+               <li><NavLink to="/team">Team</NavLink></li>
+               <li class="su-main-nav__item--parent ">
+                  <a href="#" aria-expanded="false">Maps</a>
+                  <ul class="su-main-nav__menu-lv2">
+                     <li class="">
+                     <NavLink to="/interactiveMap">Interactive Map</NavLink>
+                     </li>
+                     <li class="">
+                     <NavLink to="/comparisonMap">Comparison Map</NavLink>
+                     </li>
+                  </ul>
+               </li>
+               <li class=" ">
+               <NavLink to="/dataAnalytics">Data Analytics</NavLink>
+               </li>
+               <li class=" ">
+               <Link to="/contact">Contact Us</Link>
+               </li>
+               </ul>
+               <div class="su-site-search " role="search">
+               <form action="" method="" accept-charset="UTF-8">
+                  <label class="su-site-search__sr-label" for="search-field">Search this site</label>
+                  <input type="text" id="search-field" name="search-field" class="su-site-search__input" placeholder="Search this site" maxlength="128" />
+                  <button type="submit" name="search" class="su-site-search__submit su-sr-only-text">Submit Search</button>
+               </form>
+               </div>
+            </nav>
+         </section>
+         </section>
 
          <Sidebar show={show} handleClose={handleClose} />
       </>

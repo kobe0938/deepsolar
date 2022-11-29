@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+///
+/// Individual Nav Item.
+///
+/// @name %nav-item
+///
+/// @group placeholder
+%nav-item {
+  @include margin(null null 0);
+
+  > ul {
+    display: none;
+  }
+}

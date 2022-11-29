@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+///
+/// Bourbon Overrides
+/// Specific overrides for bourbon.
+///
+/// @name $bourbon
+///
+/// @group Pre-Vendor
+$bourbon: (
+  "modular-scale-ratio": 1.25,
+  "rails-asset-pipeline": false
+) !default;

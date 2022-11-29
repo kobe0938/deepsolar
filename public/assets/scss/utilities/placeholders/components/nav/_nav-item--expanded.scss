@@ -1,0 +1,13 @@
+@charset 'UTF-8';
+
+///
+/// Individual Nav Item -- Expanded
+///
+/// @name %nav-item--expanded
+///
+/// @group placeholder
+%nav-item--expanded {
+  > ul {
+    display: flex;
+  }
+}

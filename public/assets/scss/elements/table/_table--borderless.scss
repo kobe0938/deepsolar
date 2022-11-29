@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+// Table without borders.
+.su-table--borderless {
+  thead,
+  tbody {
+    tr,
+    td,
+    th {
+      border: 0;
+    }
+  }
+
+  thead + tbody {
+    border: 0;
+  }
+}

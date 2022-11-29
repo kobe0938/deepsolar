@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+//
+// Input
+//
+
+input,
+textarea {
+  @extend %input-base;
+  outline: none;
+}
+
+textarea {
+  height: 16rem;
+}
+
+label {
+  display: block;
+  margin-top: 3rem;
+  max-width: $su-input-max-width;
+}

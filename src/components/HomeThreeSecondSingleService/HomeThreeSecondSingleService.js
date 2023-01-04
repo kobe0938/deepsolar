@@ -96,7 +96,20 @@ const HomeThreeSecondSingleService = ({title, content, content2,content3, image,
                      </p>
                   </div>
                </div> : 
-
+               (content === "news coverage++") ?
+               <div className="col-xl-12 col-lg-6">
+               <div className="services__content-3 pl-70 pr-70">
+                  <h3>{title}</h3>
+                  <p>
+                     <div className='about__list'><ul>
+                        <NavLink to = "//news.stanford.edu/2022/11/16/solar-panels-largely-confined-wealthy-americans/"><li><span><i > <FaCheck/> </i>Stanford: Tax rebates for solar power ineffective for low-income Americans, but a different incentive works.</span></li></NavLink>
+                        <NavLink to = "//indiaeducationdiary.in/stanford-university-tax-rebates-for-solar-power-ineffective-for-low-income-americans-but-a-different-incentive-works/"><li ><span><i > <FaCheck/> </i>Stanford University: Tax Rebates For Solar Power Ineffective For Low-Income Americans, But A Different Incentive Works.</span></li></NavLink>
+                        <NavLink to = "//www.ecowatch.com/solar-energy-tax-incentives-demographics.html"><li><span><i > <FaCheck/> </i>Tax Breaks for Solar Power Ineffective for Low-Income Americans, But Other Incentives Do Work, Study Finds.</span></li></NavLink>
+                        </ul>
+                     </div> 
+                  </p>
+               </div>
+            </div> : 
 
                <div className="col-xl-7 col-lg-6">
                   <div className="services__content-3 pl-70 pr-70">

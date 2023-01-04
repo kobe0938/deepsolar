@@ -73,7 +73,9 @@ const HomeTwoCaseArea = () => {
                         tab1Image2 = "assets/img/services/model_arch.png"
                         tab2Name="DeepSolar++ Database" tab2Text={"We deployed the model to construct a spatiotemporal solar installation dataset across the U.S. In the DeepSolar++ paper, we grouped all U.S. counties according to their average number of residential PV installations per 1,000 households into 20 quantiles. Equal numbers of counties were randomly sampled from each quantile for representativeness. They cover 420 counties across 46 states in the US in total, representing one quarter of US households. \n We have now expanded the data coverage to all counties in the contiguous US. The variation of residential solar adoption rates (number of residential PV installations per 1,000 households) at the census block group level is shown as below. The aggregate-level data will be made publicly available soon." } tab2Image = "assets/img/services/solar_residential_all_50.gif"
                         tab3Name={"Useful Links"} tab3Text="serveralURLs" tab3Image={"assets/img/slider/02/slider-1.gif"}
-                        tab4Name={"Cite the Paper"} tab4Text="Wang, Z., Arlt, M. L., Zanocco, C., Majumdar, A., & Rajagopal, R. (2022). DeepSolar++: Understanding residential solar adoption trajectories with computer vision and technology diffusion models. Joule, 6(11). DOI: https://doi.org/10.1016/j.joule.2022.09.011" tab4Image={"assets/img/expart/deepsolar++_background.jpeg"}/>
+                        tab4Name = {"News Coverage"}
+                        tab4Text = {"news coverage++"}
+                        tab5Name={"Cite the Paper"} tab5Text="Wang, Z., Arlt, M. L., Zanocco, C., Majumdar, A., & Rajagopal, R. (2022). DeepSolar++: Understanding residential solar adoption trajectories with computer vision and technology diffusion models. Joule, 6(11). DOI: https://doi.org/10.1016/j.joule.2022.09.011" tab5Image={"assets/img/expart/deepsolar++_background.jpeg"}/>
                         <br></br>
                         <br></br>
                         <br></br>

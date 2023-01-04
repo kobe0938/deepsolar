@@ -3,7 +3,7 @@ const {tableau} = window;
 
 const TableauCom = () => {
   const ref = useRef(null);
-  const url =  "https://public.tableau.com/views/Book5_16680430455690/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link";
+  const url =  "https://10az.online.tableau.com/t/xiaokunchen0/views/Book5_from_tableau_cloud/Dashboard1?:render=true";
   const options = {
     device: "desktop",
   }

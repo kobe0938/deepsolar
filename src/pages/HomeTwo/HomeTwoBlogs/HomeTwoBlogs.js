@@ -17,7 +17,7 @@ const HomeTwoBlogs = () => {
                   </div>
                </div>
                <div className="row">
-
+                  <HomeTwoSingleBlog monthYear="Nov 2022" date="16" publisher="by Stanford News" desc="DeepSolar++ is covered by Stanford News." href="https://news.stanford.edu/2022/11/16/solar-panels-largely-confined-wealthy-americans/"/>
                   <HomeTwoSingleBlog monthYear="Nov 2022" date="15" publisher="by Joule" desc="Our DeepSolar++ paper is published at Joule." href="https://www.cell.com/joule/fulltext/S2542-4351(22)00477-9"/>
                   <HomeTwoSingleBlog monthYear="Apr 2022" date="22" publisher="" desc="We hosted the DeepSolar Technical Advisory Committee Meeting." href="/"/>
                   <HomeTwoSingleBlog monthYear="Sep 2020" date="07" publisher="" desc="A new model is developed for mapping solar PV installations in Germany." href="https://ieeexplore.ieee.org/abstract/document/9203258"/>

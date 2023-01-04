@@ -3,6 +3,7 @@ import CommonCtaArea from '../../components/CommonCtaArea/CommonCtaArea';
 import PageHelmet from '../../components/shared/PageHelmet';
 import TeamArea from '../Team/TeamArea/TeamArea';
 import HomeTwoAchievement from './HomeTwoAchievement/HomeTwoAchievement';
+import HomeTwoAcknowledgement from './HomeTwoAcknowledgement/HomeTwoAcknowledgement';
 import HomeTwoBlogs from './HomeTwoBlogs/HomeTwoBlogs';
 import HomeTwoCaseArea from './HomeTwoCaseArea/HomeTwoCaseArea';
 import HomeTwoCounter from './HomeTwoCounter/HomeTwoCounter';
@@ -27,6 +28,7 @@ const HomeTwo = () => {
          <p id="workPresentation">
             <HomeTwoCaseArea/>
          </p>
+         <HomeTwoAcknowledgement/>
          {/* <HomeTwoFeatures/> */}
          {/* <HomeTwoFaq/> */}
          {/* <HomeTwoAchievement/> */}

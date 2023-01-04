@@ -86,7 +86,7 @@ const HomeTwoFooter = () => {
             <div class="su-local-footer__cell1">
               <h2 class="su-sr-only-element">Address</h2>
               <address class="su-local-footer__address">
-                <strong>Lorem Ipsum Dolar Sit Amet</strong>
+                <strong>Y2E2</strong>
                 <br />
                 473 Via Ortega
                 <br />

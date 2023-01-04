@@ -35,6 +35,9 @@ const InteractiveMap = () => {
                </div>
             </div>
          </section> */}
+          <div>
+              *Due to the large data size of the zipcode level, bear with us while we load the map.
+          </div>
          <TableauCom/>
          {/* <PageHelmet pageTitle="About Page" />
 

@@ -36,6 +36,9 @@ const ComparisionMap = () => {
                </div>
             </div>
          </section> */}
+          <div>
+              *Due to the large data size of the zipcode level, bear with us while we load the map.
+          </div>
          <TableauComComparision/>
          {/* <PageHelmet pageTitle="About Page" />
 

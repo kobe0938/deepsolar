@@ -3,7 +3,7 @@ const {tableau} = window;
 
 const TableauComComparision = () => {
   const ref = useRef(null);
-  const url =  "https://public.tableau.com/views/Book5_16680430455690/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link";
+  const url =  "https://public.tableau.com/views/Book_augumented_2/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link";
   const options = {
     device: "desktop",
   }
